@@ -108,7 +108,7 @@ public class StudentssDAO {
             System.out.println("Không tồn tại nhân viên có id = " + id);
             return;
         }
-        final String sql = String.format("UPDATE `students` SET `full_name` = '%s', `gender`= '%d' ,`born`='%s',`address`='%s',`phone_number`='%d',`email`='%s',`gpa`='%s' WHERE `id`='%s' ",
+        final String sql = String.format("UPDATE `students` SET `full_name` = '%s', `gender`= '%d' ,`born`='%s',`address`='%s',`phone_number`='%d',`email`='%s',`gpa`='%f' WHERE `id`='%s' ",
                 s.getFull_name(),
                 s.getGender(),
                 s.getBorn(),

@@ -157,14 +157,10 @@ public class StudentssDAO {
 
     public static List<Students> getAllOrderByGpa() {
         List<Students> studentsList = new ArrayList<>();
-        // Bước 1: tạo kết nối
-        // Bước 2: chuẩn bị câu lệnh
-        // Bước 3: thực thi
-        // Bước 4: đóng kết nối
 
         try {
             Connection conn = MyConnection.getConnection();
-            final String sql = "SELECT * FROM students order by(diem_gpa) desc";
+            final String sql = "SELECT * FROM students order by(gpa) desc";
 
             Statement stmt = conn.createStatement();
 
